@@ -1,0 +1,70 @@
+
+:root {
+    --primary-color :#faedeb;
+    --dark-color:#000000;
+    --text-color :rgba(84, 82, 82, 0.6);
+    --white-color : #ffffff;
+    --product-price :rgba(0,0,0,0.6);
+  }
+.popular_card:nth-child(1) .Discount, .popular_card:nth-child(2) .Discount, .popular_card:nth-child(3) .Discount,.popular_card:nth-child(4) .Discount{
+    position: absolute;
+    top: 9px;
+    right: 221px;
+    color: var(--text-color);
+    background-color:var(--white-color);
+    width: -moz-fit-content;
+    width: 53px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: .87em;
+    font-weight: 500;
+    display: flex;
+    padding-top: 14px;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    letter-spacing: normal;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.15);
+    opacity: 1;
+    visibility: visible;
+    z-index: 9; 
+   }
+
+
+
+
+   @media only screen and (min-width: 280px) and (max-width: 580px) {
+    .popular_card:nth-child(1) .Discount, .popular_card:nth-child(2) .Discount, .popular_card:nth-child(3) .Discount, .popular_card:nth-child(4) .Discount {
+      right: 64%;
+      z-index: 8;
+  }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media only screen and (min-width: 676px) and (max-width: 980px) {
+
+    .popular_card:nth-child(1) .Discount, .popular_card:nth-child(2) .Discount, .popular_card:nth-child(3) .Discount, .popular_card:nth-child(4) .Discount {
+      right: 74%;
+    }
+ 
+   }
+
+
+
+
+
+
+
+
+

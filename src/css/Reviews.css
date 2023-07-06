@@ -1,0 +1,45 @@
+@import '~typeface-poppins';
+/* Global Styles */
+:root {
+  --primary-color :#faedeb;
+  --dark-color:#000000;
+  --text-color :rgba(0,0,0,0.6);
+  --white-color : #ffffff;
+}
+.Reviews {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;  
+}
+.ReviewsText{
+    max-width: 540px;
+    text-align: center;
+}
+.ReviewsText h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    line-height: 36px;
+}
+.ReviewsText p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: underline;  
+}
+ .star-icon {
+    color: #f0ad4e;
+}
+.ReviewsText h6 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    font-family: 'Poppins',sans-serif;
+    color:var(--text-color);  
+}

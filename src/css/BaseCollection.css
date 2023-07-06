@@ -1,0 +1,145 @@
+@import 'typeface-rubik';
+
+:root {
+    --primary-color :#faedeb;
+    --dark-color:#000000;
+    --text-color :rgba(0,0,0,0.6);
+    --white-color : #ffffff;
+    --hover-color : #00AC97;
+  }
+  
+  .App.lato  h2{
+    font-family: 'lato', serif !important;
+  }
+  
+
+.BaseCollection{
+    padding-left: 112px;
+    padding-right: 125px;
+    height: 620px;
+    padding-top: 100px;
+}
+.ImageOne {
+background-color: var(--white-color);
+width: 100%;
+height: 500px;
+height: 620px;
+}
+.BaseCollectionImage2 {
+    width: 100%;
+    height: 100%;
+}
+.text-BaseCollection p {
+    margin: 0px;
+    padding-top: 42px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-align:center;
+    font-size: 13px;
+    line-height: 16px;
+
+}
+.text-BaseCollection h2 {
+    line-height: 1em;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    padding: 2px 75px 10px;
+}
+.ShopNow{
+    display: inline-block;
+    line-height: 1;
+    background-color: var(--dark-color);
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: var(--white-color);
+    fill: #fff;
+    text-align: center;
+    transition: all .3s;
+    width: 119px;
+    height: 44px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.ShopNow:hover {
+    background-color: var(--hover-color);
+}
+
+
+
+/* Responsive */
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+.BaseCollection {
+ padding-left: 10px;
+ padding-right: 10px;
+ margin-bottom: 37%;
+}
+.text-BaseCollection h2 {
+    font-size: 27px;
+    line-height: 36px;
+    padding: 1px 7px 10px;
+
+}
+.ImageOne {
+    height: 418px;
+}
+.TextNewCollections {
+    padding: 9% 2%;
+}
+.TextNewCollections h2 {
+    font-size: 27px;
+}
+.NEWCOLLECTION {
+    background-size: 100% 100%;
+    height: 440px;
+    background-attachment: inherit;
+}
+}
+
+
+
+
+@media only screen and (min-width: 676px) and (max-width: 980px) {
+    .BaseCollection {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-bottom: -25%;
+    }
+    .BaseCollection .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .text-BaseCollection h2 {
+        font-size: 31px;
+        padding: 1px 34px 10px;
+       }
+       .ImageOne {
+           height: 418px;
+       }
+       .TextNewCollections {
+           padding: 9% 2%;
+       }
+       .TextNewCollections h2 {
+        font-size: 39px;
+        line-height: 41px;
+        margin-bottom: 20px;
+    }
+    .NEWCOLLECTION {
+        background-image: url(http://localhost:3000/static/media/custom-clothing-2a.7d212d9….jpg);
+        background-size: cover;
+        background-attachment: inherit;
+    }
+       .ShopNow {
+        font-size: 24px;
+        padding: 13px 24px;
+        width: 162px;
+        height: 52px;
+    
+       }
+
+}

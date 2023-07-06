@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #faedeb;
+  --dark-color: #000000;
+  --text-color: rgba(0, 0, 0, 0.6);
+  --white-color: #ffffff;
+}
+.mainNew {
+  padding-top: 140px;
+  position: relative;
+}
+.NEWCOLLECTION {
+  background-image: url(../Components/images/custom-clothing-2a.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+
+/* Color Theme */
+ .App.ThemeSecondPink .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--Pink-background);
+ }
+ .App.ThemePurple .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--Purple-background);
+ }
+
+ .App.ThemeOrange .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--Orange-background);
+ }
+ .App.ThemeRed .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--Dark-Red);
+ }
+ .App.ThemePink .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--Pink-background);
+ }
+ .App.ThemeYellow .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--Yellow-background);
+ }
+ .App.ThemeLightGreen .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--Green-background);
+ }
+ .App.ThemeGreen .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--MainGreen-Dark);
+ }
+ .App.ThemeLightBlue .NEWCOLLECTION .ShopCollections:hover {
+  background-color:var(--LightBlue-Dark);
+ }
+
+
+
+
+
+
+
+.overlay {
+  background-color: var(--dark-color);
+  background-size: cover;
+  opacity: 0.2;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  -moz-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  -ms-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  -o-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.TextNewCollections {
+  text-align: center;
+  padding: 10% 7%;
+  position: relative;
+  z-index: 1;
+}
+.TextNewCollections h6 {
+  font-size: 13px !important;
+  font-size: 1rem;
+  line-height: 16px;
+  height: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.TextNewCollections h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 11px;
+}
+.TextNewCollections h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  line-height: 26px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+}
+.ShopCollections {
+  display: inline-block;
+  line-height: 1;
+  background-color: var(--dark-color);
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 3px;
+  color: var(--white-color);
+  fill: #fff;
+  text-align: center;
+  transition: all 0.3s;
+  width: 160px;
+  height: 44px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+  .NEWCOLLECTION {
+      background-size: 100% 100%;
+      height: 440px;
+      background-attachment: inherit;
+  }
+  
+  }
+
+
+
+  @media only screen and (min-width: 676px) and (max-width: 980px) {
+       .TextNewCollections {
+           padding: 9% 2%;
+       }
+       .TextNewCollections h2 {
+        font-size: 39px;
+        line-height: 41px;
+        margin-bottom: 20px;
+    }
+    .NEWCOLLECTION {
+        background-attachment: inherit;
+    }
+     .ShopNow {
+        font-size: 24px;
+        padding: 13px 24px;
+        width: 162px;
+        height: 52px;
+    
+      }
+      .TextNewCollections h2 {
+        font-size: 40px;
+        line-height: 46px;
+      }
+      .ShopCollections {
+        font-size: 22px;
+        padding: 16px 25px;
+        width: 212px;
+        height: 59px;
+      }
+
+
+
+}

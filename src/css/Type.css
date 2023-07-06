@@ -1,0 +1,87 @@
+@import '~typeface-poppins';
+/* Global Styles */
+:root {
+  --primary-color :#faedeb;
+  --dark-color:#000000;
+  --text-color :rgba(0,0,0,0.6);
+  --white-color : #ffffff;
+}
+.TypeContainer {
+    height: 500px;
+    margin: 0px 193px;
+}
+.TypeContainer .row {
+    gap: 19px;
+}
+.Men {
+    background-image: url(../Components/images/cat-men-400x400.jpg);
+    background-size: 100% 100%;
+    height: 500px;
+    position: relative;
+}
+
+.Women {
+    background-image: url(../Components/images/cat-women-400x400.jpg);
+    background-size: 100% 100%;
+    height: 500px;
+    position: relative;
+
+}
+.Men-Text {
+    position: absolute;
+    background-color: rgba(255,255,255,.88);
+    transition: background .3s;
+    text-align: center;
+    left: 1em;
+    right: 1em;
+    padding: 7px 7px;
+    cursor: pointer;
+    bottom: 6px;
+    height: 44px;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -ms-transition: background .3s;
+    -o-transition: background .3s;
+}
+.Men-Text h4{ 
+    font-size: 11px;
+     font-weight: 700; 
+     line-height: 17px ;
+    text-transform: uppercase;
+    margin: 0px;
+
+}
+.Men-Text h6{ 
+    font-size: 10px;
+     font-weight: 800; 
+     line-height: 17px;
+     text-transform: uppercase;
+    color:var(--text-color)
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+    .TypeContainer {
+        height: 166px;
+        margin: -1px 0px 5px 0px;
+    }
+    .Men, .Women {
+        height: 215px;
+    }
+    .container.T {
+        padding-left: 19px;
+        padding-right: 19px;
+
+}
+}
+
+
+@media only screen and (min-width: 676px) and (max-width: 980px) {
+
+    .TypeContainer {
+        margin: 0px 8px;
+    }
+  
+
+
+   }

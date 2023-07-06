@@ -1,0 +1,317 @@
+@import '~typeface-poppins';
+
+/* Global Styles */
+:root {
+  --primary-color :#faedeb;
+  --dark-color:#000000;
+  --text-color :rgba(0,0,0,0.6);
+  --white-color : #ffffff;
+  --Purple-Footer:rgb(21, 14, 31);
+  --Red-Footer: #2B161B;
+  --Light-grey :rgb(243, 241, 246);
+
+
+}
+.Footer-box{
+    background-color: var(--primary-color);
+    height: 529px;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  /* Theme colors */
+  .App.BlackBox .Footer-box{ 
+    background-color: var(--primary-color);
+   }
+
+   .App.BlackBox .Footer-box{ 
+    background-color: var(--primary-color);
+   }
+   .App.ThemePurple .Footer-box{ 
+    background-color: var(--Light-grey);
+   }
+   .App.ThemeYellow .Footer-box{ 
+    background-color: var(--Yellow-Theme);
+   }
+   .App.ThemeLightGreen .Footer-box{ 
+    background-color: var(--Green-Theme);
+   }
+   .App.ThemeGreen .Footer-box{ 
+    background-color: var(--MainGreen-Theme);
+   }
+   .App.ThemeLightBlue .Footer-box{ 
+    background-color: var(--LightBlue-Theme);
+   }
+
+   .App.ThemePurple .Footer-box  .Copyright, .App.ThemePurple .Footer-box .SendEmail{ 
+    background-color: rgb(21, 14, 31);
+   }
+   .App.ThemeLightGreen .Footer-box  .Copyright, .App.ThemeLightGreen .Footer-box .SendEmail,
+   .App.ThemeGreen .Footer-box  .Copyright, .App.ThemeGreen .Footer-box .SendEmail{ 
+    background-color: var(--Green-ThemeFooter);
+   }
+  .App.ThemeRed .Footer-box{ 
+      background-color: var(--Red);
+  }
+  .App.ThemeRed .Footer-box  .Copyright, .App.ThemeRed .Footer-box .SendEmail{ 
+        background-color:var(--Red-Footer);
+   }
+   .App.ThemePink .Footer-box{ 
+    background-color: var(--Pink-Theme);
+   }
+   .App.ThemePink .Footer-box  .Copyright, .App.ThemePink .Footer-box .SendEmail{ 
+    background-color:var(--Red-Footer);
+}
+.App.ThemeSecondPink .Footer-box{ 
+  background-color: var(--SecondPink-Theme);
+ }
+ .App.ThemeSecondPink .Footer-box  .Copyright, .App.ThemeSecondPink .Footer-box .SendEmail{ 
+  background-color:var(--Red-Footer);
+}
+
+.App.ThemeSecondPink .Footer-box  .SendEmail:hover {
+  background-color:var(--Pink-background);
+ }
+ .App.ThemePurple .Footer-box  .SendEmail:hover {
+  background-color:var(--Purple-background);
+ }
+ .App.ThemePink .Footer-box  .SendEmail:hover {
+  background-color:var(--Pink-background);
+ }
+ .App.ThemeRed .Footer-box  .SendEmail:hover {
+  background-color:var(--Dark-Red);
+ }
+ .App.ThemeOrange .Footer-box  .SendEmail:hover {
+  background-color:var(--Dark-Red);
+ }
+ .App.ThemeYellow .Footer-box  .SendEmail:hover {
+  background-color:var(--Yellow-background);
+ }
+ .App.ThemeLightGreen .Footer-box  .SendEmail:hover {
+  background-color:var(--Green-background);
+ }
+ .App.ThemeGreen .Footer-box  .SendEmail:hover {
+  background-color:var(--MainGreen-Dark);
+ }
+ .App.ThemeLightBlue .Footer-box  .SendEmail:hover {
+  background-color:var(--LightBlue-Dark);
+ }
+
+
+
+
+
+  /* End Theme Colors */
+
+
+   
+  .SendEmail{
+    display: inline-block;
+    line-height: 1;
+    background-color: var(--dark-color);
+    font-size: 17px;
+    padding: 15px 24px;
+    border-radius: 3px;
+    color: var(--white-color);
+    fill: #fff;
+    text-align: center;
+    transition: all .3s;
+    width: 142px;
+    height: 50px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.facebook-icon {
+    background: none;
+    border-radius: 0;
+}
+.FooterText{
+  text-align: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 16px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+.FooterText h3 {
+    font-size: 29px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    line-height: 23px;
+    line-height: 0.8;
+    text-transform: capitalize;
+    margin-bottom: 45px;    
+}
+input {
+  display: table;
+  width: calc(100% - 160px);
+  float: left;
+  color: #666;
+  padding: 0.75em;
+  height: auto;
+  max-width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color:  #dddddd;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid #c6c5c5;
+  outline: none;
+}
+.links {
+  margin-top: 41px;
+  text-align: center;
+  margin-right: 38px;
+  text-transform: capitalize;
+}
+.facebook, .Twitter, .Instagram{
+  padding: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.facebook:hover, .Twitter:hover, .Instagram:hover{
+    background-color: #f6f6f6;
+}
+
+.Copyright {
+  position: absolute;
+  bottom: 0px;
+  background-color: black;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 80px;
+}
+.Copyright  p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+  .FooterText {
+    padding-top: 31px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.FooterText h3 {
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 19px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+}
+.SendEmail {
+  width: 100%;
+  margin-top: 5%;
+}
+.links {
+  flex-direction: column;
+  margin-top: 0px;
+}
+.gap-5 {
+  gap: 6px !important;
+}
+.Footer-box {
+  height: 646px;
+  margin-bottom: 12px;
+
+}
+.container.F {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.Copyright p {
+  font-size: 11px;
+}
+}
+
+
+
+@media only screen and (min-width: 676px) and (max-width: 980px) {
+  .FooterText {
+    padding-top: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.FooterText h3 {
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+.FooterText p {
+  margin-bottom: 10%;
+}
+.email {
+  display: flex;
+  flex-direction: row;
+}
+input {
+  width: 100%;
+  margin-right: 13px;
+}
+.SendEmail {
+  width: 33%;
+  margin-top: 0%;
+  font-size: 22px;
+  padding: 10px 24px;
+}
+.links {
+  margin-top: 5%;
+}
+.gap-5 {
+  gap: 10% !important;
+}
+.Footer-box {
+  height: 646px;
+  margin-bottom: 12px;
+
+}
+.container.F {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.Copyright p {
+  font-size: 11px;
+}
+.Icon {
+  margin-top: 4%;
+}
+}

@@ -1,0 +1,798 @@
+@import '~typeface-poppins';
+@import '~typeface-dm-sans';
+@import 'typeface-playfair-display';
+@import 'typeface-lato';
+@import 'typeface-montserrat';
+
+/* Global Styles */
+:root {
+  --primary-color :#faedeb;
+  --dark-color:#000000;
+  --text-color :rgba(0,0,0,0.6);
+  --white-color : #ffffff;
+  --LightDark-color : #5a5a5a;
+
+  /*Purple Theme */
+  --Purple-background :rgb(142, 67, 240);
+  --Purple-Dark:rgb(99, 0, 226);
+  --Purple-Light:rgb(88, 77, 102);
+  --Light-grey :rgb(243, 241, 246);
+  --Purple-Footer:rgb(21, 14, 31);
+
+/* Red Theme */
+ --Red-background :rgb(239, 77, 72);
+ --Dark-Red :rgb(217, 7, 0);
+ --Red :#F7F3F5;
+
+/* Pink theme */
+ --Pink-background: rgb(255, 66, 179);
+ --Pink-light: rgb(255, 0, 153);
+ --Pink-Theme:#f2e0e9;
+/*  Second Pink Theme */
+ --SecondPink-background: rgb(255, 106, 151);
+ --SecondPink-Dark: rgb(250, 3, 107);
+ --SecondPink-Theme : #F2E3DB;
+ --SecondPink-Footer: #2B161B;
+ /* Orange Theme */
+ --Orange-background:rgb(255, 122, 61);
+ --Orange-Dark:rgb(255, 81, 0);
+ --Orange-Theme:#F8F5F4;
+
+ /* Yellow Theme */
+ --Yellow-background:rgb(249, 195, 73);
+ --Yellow-Dark:rgb(255, 177, 0);
+ --Yellow-Theme: #F8F7F3;
+
+/* Theme Light Green */
+--Green-background:rgb(48, 199, 181);
+--Green-Dark: rgb(0, 172, 151);
+--Green-Theme: rgb(222, 231, 222);
+--Green-ThemeFooter :rgb(20, 38, 28);
+
+/* Theme  Green */
+--MainGreen-background:rgb(27, 174, 112);
+--MainGreen-Dark: rgb(6, 117, 46);
+--MainGreen-Theme:rgb(244, 246, 244);
+
+/* Theme Light Blue */
+--LightBlue-background: rgb(47, 193, 255);
+--LightBlue-Dark: rgb(8, 172, 242);
+--LightBlue-Theme: rgb(243, 246, 246);
+
+}
+
+.header-box{
+    background-color: var(--primary-color);
+    height: 600px;
+    overflow: hidden;
+}
+
+
+.App.lato  h1, h2, h3, h4, h5, h6, p , span .ProductName{
+  font-family: 'lato', serif !important;
+}
+
+
+/* Color Theme */
+.App.BlackBox .header-box{ 
+  background-color: var(--primary-color);
+}
+.App.ThemePurple .header-box{ 
+  background-color: var(--Light-grey);
+ }
+ .App.ThemeRed .header-box{ 
+  background-color: var(--Red);
+ }
+ .App.ThemePink .header-box{ 
+  background-color: var(--Pink-Theme);
+ }
+ .App.ThemeSecondPink .header-box{ 
+  background-color: var(--SecondPink-Theme);
+ }
+ .App.ThemeOrange .header-box{ 
+  background-color: var(--Orange-Theme);
+ }
+ .App.ThemeYellow .header-box{ 
+  background-color: var(--Yellow-Theme);
+ }
+ .App.ThemeLightGreen .header-box{ 
+  background-color: var(--Green-Theme);
+ }
+ .App.ThemeGreen .header-box{ 
+  background-color: var(--MainGreen-Theme);
+ }
+ .App.ThemeLightBlue .header-box{ 
+  background-color: var(--LightBlue-Theme);
+ }
+
+
+ .App.ThemeSecondPink .header-box .ShopCollection p:hover {
+  background-color:var(--Pink-background);
+ }
+ .App.ThemePurple .header-box .ShopCollection p:hover {
+  background-color:var(--Purple-background);
+ }
+
+ .App.ThemeOrange .header-box .ShopCollection p:hover {
+  background-color:var(--Orange-background);
+ }
+ .App.ThemeRed .header-box .ShopCollection p:hover {
+  background-color:var(--Dark-Red);
+ }
+ .App.ThemePink .header-box .ShopCollection p:hover {
+  background-color:var(--Pink-background);
+ }
+ .App.ThemeYellow .header-box .ShopCollection p:hover {
+  background-color:var(--Yellow-background);
+ }
+ .App.ThemeLightGreen .header-box .ShopCollection p:hover {
+  background-color:var(--Green-background);
+ }
+ .App.ThemeGreen .header-box .ShopCollection p:hover {
+  background-color:var(--MainGreen-Dark);
+ }
+ .App.ThemeLightBlue .header-box .ShopCollection p:hover {
+  background-color:var(--LightBlue-Dark);
+ }
+
+
+
+
+
+
+
+ /* Font Theme */
+.App.PlayFair  h1, h2, h3, h4, h5, h6, span, p {
+  font-family: 'Playfair Display', serif;
+}
+ .App.lato h1, h2, h3, h4, h5, h6, span, p {
+  font-family: 'lato', serif;
+}
+.App.Montserrat h1, h2, h3, h4, h5, h6, span, p {
+  font-family: 'Montserrat', serif;
+}
+
+.App.PlayFair .FontOne, .App.lato .FontTow, .App.Montserrat .FontThree {
+ border : 1px solid blue
+}
+
+
+
+
+  .header-container { 
+    display: flex;
+    margin-right: 160px;
+    margin-left: 160px;
+    position: relative;
+  }
+  .header-container .row {
+    width: 100%;
+  }
+  .group-image {
+    position: relative;
+  }
+  .HeaderBackImage {
+    width: 463px;
+    top: 52px;
+    right: 31px;
+  }
+  .HeaderFrontImage {
+    position: absolute;
+    top: -13px;
+    right: 10px;
+    height: 623px;
+  }
+  .header-text {
+    padding: 162px 10px 10px 10px;
+  }
+  .header-text h6 {
+    font-family: 'Poppins', sans-serif, Courier;
+    font-size: 13px;
+    line-height: 16px;
+    color:var(--text-color)
+  }
+  .header-text h1 {
+    font-size: 55px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif, Courier;
+    line-height: 55px;
+    color:var(--dark-color);
+  }
+  .ShopCollection p {
+    width: 160px;
+    height: 52px;
+    font-family: 'Poppins', sans-serif, Courier;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 12px;
+    margin-top: 26px;
+    cursor: pointer;
+  }
+  
+
+
+.customizeColor {
+  background-color: var(--white-color);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 191px;
+  width: 155px;
+  cursor: pointer;
+  height: 49px;
+  z-index: 9;
+  right: 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.customizeColor:hover  {
+  background-color: blue;
+  color: var(--white-color) !important;
+}
+.customizeColor:hover .faPalette{
+  color: var(--white-color);
+}
+.customizeColor:hover .customize {
+  color: var(--white-color);
+}
+.customize{
+  cursor: pointer;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.faPalette {
+  color: blue;
+  margin-right: 10px;
+}
+.ColorBoxDisable{
+  display: none;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.ColorBox {
+  background-color: var(--white-color);
+  width: 368px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  border:1px solid #ebebeb;
+  right: 0;
+  z-index: 130;
+  top: 0;
+  bottom: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+} 
+
+.ColorBox {
+  transform: translateX(0%);
+  /*transition: all 2s linear;
+  */-webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  -ms-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  -webkit-transform: translateX(0%);
+}
+
+
+.headerBox {
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.headerBox p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'dm-sans-serif', sans-serif;
+}
+.headerBox .fatimes  {
+  padding: 6px;
+  border-style: solid;
+  border-width: 1px;
+  color: #8b8787;
+  cursor: pointer;
+}
+.bodyBox {
+  padding: 20px 20px 0 20px;
+}
+
+
+.bodyBox .bodyBoxP {
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  line-height: 25px;
+  font-family: 'dm-sans-serif', sans-serif;
+  margin: 0;
+}
+.OtherColors {
+  display: flex;
+  justify-content: space-between;
+}
+.OtherColors p {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'dm-sans-serif', sans-serif;
+}
+.Default {
+    opacity: .4;
+    color: grey;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'dm-sans-serif', sans-serif;
+
+}
+
+.DEFAULTCOLORS {
+  justify-content: space-between;
+  border: 1px solid #dedddd;
+  padding: 12px;
+  height: 41px;
+  cursor: pointer;
+}
+.DEFAULTCOLORS:hover, .PurpleBox:hover,.RedBox:hover, .PinkBox:hover,  .BlueBox:hover, .SecondPinkBox:hover , .OrangeBox:hover
+ {
+  border-color: blue;
+}
+.DEFAULTCOLORS p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: 'dm-sans-serif', sans-serif;
+
+}
+/* Black Box */
+ .bodyBox ul {
+  display: flex;
+  margin:0px ;
+  padding-left: 0px;
+}
+.bodyBox ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 9px;
+  cursor: pointer;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+} 
+.bodyBox ul li:last-child {
+  margin-right: 0px;
+
+}
+.bodyBox li:hover {
+  outline: 1px dotted red;
+}
+.ColorBox .BlackBox li:nth-child(1){
+  background-color: var(--dark-color);
+}
+.ColorBox .BlackBox li:nth-child(2){
+  background-color: var(--text-color);
+}
+.ColorBox .BlackBox li:nth-child(3){
+  background-color: var(--white-color);
+}
+.ColorBox .BlackBox li:nth-child(4){
+  background-color: var(--LightDark-color);
+}
+.ColorBox .BlackBox li:nth-child(5){
+  background-color: var(--primary-color);
+}
+/* Col One Color */
+
+.colOne {
+  margin-top: 15px;
+
+}
+.PurpleBox , .RedBox, .PinkBox, .SecondPinkBox, .OrangeBox, .YellowBox, .LightGreenBox, .GreenBox, .LightBlueBox{
+  border: 1px solid #dedddd;
+    padding: 12px;
+    height: 41px;
+    width: 48%;
+    cursor: pointer;
+    padding: 9px;
+}
+.ColorBox .PurpleBox li:nth-child(1) {
+  background-color: var(--Purple-background);
+}
+.ColorBox .PurpleBox li:nth-child(2) {
+  background-color: var(--Purple-Dark);
+}
+.ColorBox .PurpleBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .PurpleBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .PurpleBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+/* Red Colors */
+.ColorBox .RedBox li:nth-child(1) {
+  background-color: var(--Red-background);
+}
+.ColorBox .RedBox li:nth-child(2) {
+  background-color: var(--Dark-Red);
+}
+.ColorBox .RedBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .RedBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .RedBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+
+/* Pink Colors */
+.ColorBox .PinkBox li:nth-child(1) {
+  background-color: var(--Pink-background);
+}
+.ColorBox .PinkBox li:nth-child(2) {
+  background-color: var(--Pink-light);
+}
+.ColorBox .PinkBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .PinkBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .PinkBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+
+
+/* Second Pink Colors */
+.ColorBox .SecondPinkBox li:nth-child(1) {
+  background-color: var(--SecondPink-background);
+}
+.ColorBox .SecondPinkBox li:nth-child(2) {
+  background-color: var(--SecondPink-Dark);
+}
+.ColorBox .SecondPinkBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .SecondPinkBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .SecondPinkBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+/*  Orange Colors */
+.ColorBox .OrangeBox li:nth-child(1) {
+  background-color: var(--Orange-background);
+}
+.ColorBox .OrangeBox li:nth-child(2) {
+  background-color: var(--Orange-Dark);
+}
+.ColorBox .OrangeBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .OrangeBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .OrangeBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+
+
+/*  Yellow Colors */
+.ColorBox .YellowBox li:nth-child(1) {
+  background-color: var(--Yellow-background);
+}
+.ColorBox .YellowBox li:nth-child(2) {
+  background-color: var(--Yellow-Dark);
+}
+.ColorBox .YellowBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .YellowBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .YellowBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+
+
+/* Light Green Colors */
+.ColorBox .LightGreenBox li:nth-child(1) {
+  background-color: var(--Green-background);
+}
+.ColorBox .LightGreenBox li:nth-child(2) {
+  background-color: var(--Green-Dark);
+}
+.ColorBox .LightGreenBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .LightGreenBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .LightGreenBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+
+ /*  Green Colors */
+.ColorBox .GreenBox li:nth-child(1) {
+  background-color: var(--MainGreen-background);
+}
+.ColorBox .GreenBox li:nth-child(2) {
+  background-color: var(--MainGreen-Dark);
+}
+.ColorBox .GreenBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .GreenBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .GreenBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+
+ /*  Light Blue Colors */
+ .ColorBox .LightBlueBox li:nth-child(1) {
+  background-color: var(--LightBlue-background);
+}
+.ColorBox .LightBlueBox li:nth-child(2) {
+  background-color: var(--LightBlue-Dark);
+}
+.ColorBox .LightBlueBox li:nth-child(3) {
+  background-color: var(--Purple-Light);
+}
+.ColorBox .LightBlueBox li:nth-child(4) {
+  background-color: var(--dark-color);
+}
+.ColorBox .LightBlueBox li:nth-child(5) {
+  background-color: var(--Light-grey);
+}
+
+
+
+
+
+
+
+
+
+.BoxName{
+  height: 300px;
+  padding: 11px;
+}
+.FontDefault{
+  height: 40px;
+  padding: 10px;
+}
+.FontDefault p {
+  font-weight: 500;
+  font-size: 16px;
+}
+.FontDefault span {
+  cursor: pointer;
+}
+.FontDefault span:hover {
+  color:blue;
+}
+.Poppins {
+  background-color: #f3f3f3;
+  width: 189px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 11px auto;
+  text-align: center;
+  cursor: pointer;
+  border:1px solid #ededed
+}
+.Poppins:hover{
+  border:1px solid blue;
+ 
+}
+.PoppinsDark {
+  font-family: 'Poppins', sans-serif, Courier;
+  font-weight: 600;
+}
+.PoppinsLight {
+     font-family: 'Poppins', sans-serif, Courier;
+}
+.FontType {
+  margin: 15px;
+}
+.FontOne, .FontTow, .FontThree, .FontFive {
+  background-color: #f7f7f9;
+  padding: 8px;
+  width: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  font-size: 24px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+  position: relative;
+}
+.App.PlayFair .FontOne {
+  border: 1px solid blue;
+
+}
+.FontOne:hover {
+  border: 1px solid blue;
+}
+.FontOne:hover::after,.FontTow:hover::after, .FontThree:hover::after {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  position: absolute;
+  font-size: 10px;
+  top: 47px;
+  padding: 5px 10px;
+  
+}
+.FontOne:hover::after {
+  content: "Playfair/ serif"; 
+  width: 100px;
+
+}
+.FontTow:hover::after{
+  content: "Poppins / Lato";
+  width: 100px;
+
+}
+.FontThree:hover::after {
+  content: "Montserrat / Lato";
+  width: 120px;
+
+}
+/* Font One */
+.PlayFair {
+  font-family: "Playfair Display";
+  font-weight: 700;
+}
+/* Font Two */
+.FontTow span:nth-child(1){
+  font-family: 'Poppins', sans-serif, Courier;
+  font-weight: 700;
+}
+.FontTow span:nth-child(2){
+  font-family: 'Lato', sans-serif, Courier;
+  font-weight: 400;
+}
+/* Font Three */
+.FontThree span:nth-child(1){
+  font-family: 'Montserrat', sans-serif, Courier;
+  font-weight: 700;
+}
+.FontThree span:nth-child(2){
+  font-family: 'Lato', sans-serif, Courier;
+  font-weight: 400;
+}
+
+
+
+/* Responsive */ 
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+  .container.header-cont { 
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .header-container {
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .header-container .col-6 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-top: 20px;
+}
+  .header-text {
+    padding: 10%;
+    text-align: center;
+}
+.header-text h1 {
+  font-size: 30px;
+  line-height: 31px;
+}
+.header-container .row {
+      margin-top: 0px;
+     margin-right:  0px; 
+     margin-left:  0px;
+     flex-direction: column;
+}
+.ShopCollection p {
+  margin: 0px auto;
+}
+.HeaderBackImage {
+  width: 92%;
+  position: absolute;
+  top: 7%;
+  right: 1%;
+}
+.HeaderFrontImage {
+  position: absolute;
+  top: 36px;
+  right: 10px;
+  height: 352px;
+}
+.ShopCollection {
+  padding-top: 10px;
+}
+  
+  }
+
+
+
+  @media only screen and (min-width: 676px) and (max-width: 980px) {
+
+    .container.header-cont { 
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .header-container {
+      display: flex;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .header-container .col-6 {
+      flex: 0 0 auto;
+      width: 50%;
+      padding-top: 20px;
+  }
+  .header-text {
+    padding: 36% 0% 0% 9%;
+    text-align: left;
+}
+  .header-text h1 {
+    font-size: 42px;
+    line-height: 95%;
+}
+  .header-container .row {
+        margin-top: 0px;
+       margin-right:  0px; 
+       margin-left:  0px;
+  }
+  .ShopCollection p {
+    margin: 0px auto;
+  }
+  .HeaderBackImage {
+    width: 92%;
+    position: absolute;
+    top: 7%;
+    right: 1%;
+  }
+  .HeaderFrontImage {
+    position: absolute;
+    top: -30px;
+    right: -21px;
+    height: 531px;
+    width: 446px;
+}
+.header-box {
+  height: 518px;
+}
+  .ShopCollection {
+    padding-top: 16px;
+    position: absolute;
+}
+  }

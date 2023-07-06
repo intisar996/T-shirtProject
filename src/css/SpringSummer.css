@@ -1,0 +1,223 @@
+:root {
+    --primary-color :#faedeb;
+    --dark-color:#000000;
+    --text-color :rgba(0,0,0,0.6);
+    --white-color : #ffffff;
+    --hover-color : #00AC97;
+    --summer-background: #faedeb;
+      /*Purple Theme */
+  --Purple-background :rgb(142, 67, 240);
+  --Purple-Dark:rgb(99, 0, 226);
+  --Purple-Light:rgb(88, 77, 102);
+  --Light-grey :rgb(243, 241, 246);
+  --Purple-Footer:rgb(21, 14, 31);
+
+/* Red Theme */
+ --Red-background :rgb(239, 77, 72);
+ --Dark-Red :rgb(217, 7, 0);
+ --Red :#F7F3F5;
+
+/* Pink theme */
+ --Pink-background: rgb(255, 66, 179);
+ --Pink-light: rgb(255, 0, 153);
+ --Pink-Theme:#f6f4f5;
+ /* Orange Theme */
+ --Orange-Theme:#F8F5F4;
+
+  }
+.Summer {
+    margin-top: 160px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg,var(--summer-background) 55%,var(--white-color) 55%);
+    height: 690px;
+    display: flex;
+    padding-right: 100px;
+    padding-left: 100px;
+    position: relative;
+}
+/* Start Theme Colors */
+.App.BlackBox .Summer{ 
+    background-color: var(--primary-color);
+}
+.App.ThemePurple .Summer{ 
+    background-image: linear-gradient(90deg,var(--Light-grey) 55%,var(--white-color) 55%);
+}
+.App.ThemeRed .Summer{ 
+    background-image: linear-gradient(90deg,var(--Red) 55%,var(--white-color) 55%);
+}
+
+.App.ThemePink .Summer{ 
+    background-image: linear-gradient(90deg,var(--Pink-Theme) 55%,var(--white-color) 55%);
+   }
+   .App.ThemeSecondPink .Summer{ 
+    background-image: linear-gradient(90deg,var(--SecondPink-Theme) 55%,var(--white-color) 55%);
+
+   }
+   .App.ThemeOrange .Summer{ 
+    background-image: linear-gradient(90deg,var(--Orange-Theme) 55%,var(--white-color) 55%);
+   }
+
+   .App.ThemeYellow .Summer{ 
+    background-image: linear-gradient(90deg,var(--Yellow-Theme) 55%,var(--white-color) 55%);
+   }
+   .App.ThemeLightGreen .Summer{ 
+    background-image: linear-gradient(90deg,var(--Green-Theme) 55%,var(--white-color) 55%);
+
+   }
+   .App.ThemeLightGreen .Summer{ 
+    background-image: linear-gradient(90deg,var(--Green-Theme) 55%,var(--white-color) 55%);
+
+   }
+   .App.ThemeGreen .Summer{ 
+    background-image: linear-gradient(90deg,var(--MainGreen-Theme) 55%,var(--white-color) 55%);
+   }
+   .App.ThemeLightBlue .Summer{ 
+    background-image: linear-gradient(90deg,var(--LightBlue-Theme) 55%,var(--white-color) 55%);
+   }
+
+   .App.ThemeSecondPink .Summer  .Collections,.App.ThemePink .Summer  .Collections,
+   .App.ThemeRed .Summer .Collections
+   { 
+    background-color:var(--Red-Footer);
+   }
+  
+   .App.ThemeSecondPink .Summer .Collections:hover {
+    background-color:var(--Pink-background);
+   }
+   .App.ThemePurple .Summer .Collections:hover {
+    background-color:var(--Purple-background);
+   }
+   .App.ThemePink .Summer .Collections:hover {
+    background-color:var(--Pink-background);
+   }
+   .App.ThemeRed .Summer .Collections:hover {
+    background-color:var(--Dark-Red);
+   }
+   .App.ThemeOrange .Summer .Collections:hover {
+    background-color:var(--Orange-background);
+   }
+   .App.ThemeYellow .Summer .Collections:hover {
+    background-color:var(--Yellow-background);
+   }
+
+   .App.ThemeGreen .Summer .Collections:hover {
+    background-color:var(--MainGreen-Dark);
+   }
+   .App.ThemeLightBlue .Summer .Collections:hover  {
+    background-color:var(--LightBlue-Dark);
+   }
+
+/* End Theme Colors */
+
+
+
+.Summer .row {
+    width: 100%;
+}
+.SpringSummerImage {
+    vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    width: 490px;
+    top: -46px;
+    height: 690px;
+    position: absolute;
+}
+.Collections {
+    display: inline-block;
+    line-height: 1;
+    background-color: var(--dark-color);
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: var(--white-color);
+    fill: #fff;
+    text-align: center;
+    transition: all .3s;
+    width: 190px;
+    height: 44px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.right h6 {
+    font-size: 13px;
+    line-height: 16.25px;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.right h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1em;
+}
+.right p {
+    font-size: 13px;
+    line-height: 21px;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1em;
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+ .Summer .row {
+    flex-direction: column;
+ }
+ .Summer {
+    margin-top: 83px;
+    height: 690px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.SpringSummerImage {
+    width: 490px;
+    top: 332px;
+    height: 480px;
+}
+.col-6.rigt{
+    width: 100%;
+}
+.right {
+    padding: 10%;
+}
+.right h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.Summer .container {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.right p {
+    font-size: 12px;
+    width: 133%;
+    line-height: 21px;
+}
+}
+
+
+
+@media only screen and (min-width: 676px) and (max-width: 980px) {
+    .Summer {
+        padding-right: 1%;
+        padding-left: 1%;
+}
+.SpringSummerImage {
+    width: 354px;
+    top: -46px;
+    right: 55%;
+    height: 608px;
+}
+.right p {
+    font-size: 13px;
+    width: 119%;
+    line-height: 27px;
+}
+}

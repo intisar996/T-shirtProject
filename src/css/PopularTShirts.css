@@ -1,0 +1,308 @@
+@import '~typeface-poppins';
+:root {
+    --primary-color :#faedeb;
+    --dark-color:#000000;
+    --text-color :rgba(0,0,0,0.6);
+    --white-color : #ffffff;
+    --product-price :rgba(0,0,0,0.6);
+  }
+  
+.popular {
+    padding: 100px 0 0;
+}
+.popular h6 {
+    font-size: 13px;
+    font-size: 1rem;
+    line-height: 1.25em;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    color:var(--text-color);
+}
+.popular h1 {
+    font-size: 36px;
+    font-size: 2.7692307692308rem;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1em;
+    color:var(--dark-color);
+}
+ul {
+    list-style: none;
+}
+.ProductDefaultImage, .ProductHoverImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.popular_Image {
+    position: relative;
+} 
+.ProductHoverImage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: filter .6s,opacity .6s,transform .6s;
+    -webkit-transition: filter .6s,opacity .6s,transform .6s;
+    -moz-transition: filter .6s,opacity .6s,transform .6s;
+    -ms-transition: filter .6s,opacity .6s,transform .6s;
+    -o-transition: filter .6s,opacity .6s,transform .6s;
+}
+  .iconCart {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    border-radius: 50%;
+    color: var(--dark-color);
+    background: var(--white-color);
+    width: 2em;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.icon_faEye {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  border-radius: 50%;
+  color: var(--dark-color);
+  background: var(--white-color);
+  width: 2em;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.icon_faEye:after{
+  content: "View Quick";
+}
+.iconCart:after{
+  content: "Select options";
+}
+.icon_faEye:after , .iconCart:after{
+  background-color: var(--dark-color);
+  pointer-events: none;
+  white-space: nowrap;
+  padding: 8px 9px;
+  padding: 0.7em 0.9em;
+  color: var(--white-color);
+  margin-right: 10px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  line-height: 1;
+  font-weight: normal;
+  position: absolute;
+  right: 94%;
+  top: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.icon_faEye:before, .iconCart:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent transparent transparent var(--dark-color);
+  opacity: 0;
+  visibility: hidden;
+}
+.icon_faEye:hover:after, .iconCart:hover:after  {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon_faEye:hover:before, .iconCart:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popular_Image:hover  .icon_faEye {
+  opacity: 1;
+  visibility: visible;
+}
+.popular_Image:hover .iconCart {
+  opacity: 1;
+  visibility: visible;
+}
+.popular_Image:hover .ProductHoverImage{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+  .ProductType {
+    font-size: 13px;
+    line-height: 14px;
+    color:var(--text-color);
+  }
+  a {
+    text-decoration: none;
+    color:#000000;
+  }
+
+  .ProductPrice {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 15px;
+    color:var(--product-price);
+    font-family: 'Poppins',sans-serif;
+  }
+  .ProductName {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Poppins',sans-serif;
+  }
+  .card-T .popular_card:nth-child(1) .Discount, .card-T .popular_card:nth-child(2) .Discount, .card-T .popular_card:nth-child(3) .Discount{
+   display: none;
+
+  }
+  
+  .popular_card:nth-child(4) .Discount{
+    position: absolute;
+    top: 9px;
+    right: 221px;
+    color: black;
+    background-color: #ffffff;
+    width: -moz-fit-content;
+    width: 53px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: .87em;
+    font-weight: 500;
+    display: flex;
+    padding-top: 14px;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    letter-spacing: normal;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.15);
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.prod{
+  padding-left: 125px;
+  padding-right: 125px;
+}
+/* Responsive */ 
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+  .popular h1 {
+    font-size: 25px;
+  }
+  .pb-5 {
+    padding-bottom: 1rem !important ;
+}
+.prod {
+  padding-left: 10%;
+  padding-right: 0%;
+}
+.row.card-T {
+     margin-right: 0px; 
+     margin-left:0px;
+  }
+  .popular_card {
+    margin-bottom: 13%;
+  }
+  .popular .container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.popularList.row {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.card-T  .popular_card:nth-child(4) .Discount {
+  position: absolute;
+  top: 6px;
+  right: 67%;
+  width: 44px;
+  height: 26px;
+
+}
+}
+
+
+
+@media only screen and (min-width: 676px) and (max-width: 980px) {
+  .popular h1 {
+    font-size: 36px;
+}
+  .pb-5 {
+    padding-bottom: 1rem !important ;
+}
+.prod {
+  padding-left: 4%;
+  padding-right: 0%;
+}
+.row.card-T {
+     margin-right: 0px; 
+     margin-left:0px;
+  }
+  .popular_card {
+    margin-bottom: 5%;
+}
+  .popular .container {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.popularList.row {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.card-T  .popular_card:nth-child(4) .Discount {
+  position: absolute;
+  top: 6px;
+  right: 67%;
+  width: 44px;
+  height: 26px;
+
+}
+.popularBox .col-md-3 {
+  flex: 0 0 auto;
+  width: 33%;
+}
+}
